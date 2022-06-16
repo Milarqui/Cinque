@@ -1,8 +1,14 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import loginReducer from '../features/login/loginSlice';
+import createUserReducer from '../features/createUser/createUserSlice';
+import transferReducer from '../features/transfers/transferSlice';
+import friendReducer from '../features/friends/friendSlice'
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    login: loginReducer,
+    createUser: createUserReducer,
+    transfer: transferReducer,
+    friend: friendReducer
   },
 });
